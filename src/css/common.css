@@ -18,23 +18,21 @@ img {
 }
 
 .timer {
-display: flex;
+  display: flex;
 }
 
 .field {
-  
   margin-right: 15px;
 }
-.value {
-font-size: 40px;
-font-weight: 500;
 
+.value {
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .label {
   font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
-display: block;
-text-align: center;
-
+  display: block;
+  text-align: center;
 }
