@@ -22,8 +22,8 @@ form.addEventListener('submit', event => {
   const amount = Number(event.target.elements.amount.value);
   event.preventDefault();
 
-  for (let i = 1; i <= amount; i += 1) {
-    createPromise(i, delay + (i - 1) * step)
+  for (let i = 0; i <= amount; i += 1) {
+    createPromise(i, delay + i * step)
       .then(({ position, delay }) => {
         Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })

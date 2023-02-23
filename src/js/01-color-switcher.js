@@ -7,12 +7,16 @@ function getRandomHexColor() {
 }
 
 function handleBtnStartClick() {
+  stoptBtn.disabled = false;
+  startBtn.disabled = true;
   timerId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 }
 
 function handleBtnStoptClick() {
+ startBtn.disabled = false;
+ stoptBtn.disabled = true;
   clearInterval(timerId);
 }
 
